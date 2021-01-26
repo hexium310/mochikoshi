@@ -15,11 +15,7 @@ export const App: React.FC = () => {
   const [newTimeline, setNewTimeline] = React.useState('');
 
   React.useEffect(() => {
-    if (carriedOverTime === null) {
-      return;
-    }
-
-    const diff = 90 - carriedOverTime;
+    const diff = 90 - (carriedOverTime ?? 90);
 
     const newTL = timeline.split('\n').map((v) => {
       if (!v.match(/^\d:\d{2}/)) {
