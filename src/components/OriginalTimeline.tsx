@@ -11,7 +11,7 @@ const OriginalTimeline: React.FC<OriginalTimelineProps> = ({ value, handleChange
     <div className={ cntl`flex flex-col items-center w-full` }>
       元のTL
       <textarea
-        className={ cntl`border md:w-full lg:w-1\/2 h-32` }
+        className={ cntl`border w-full md:w-1/2 h-32` }
         placeholder="ここにTLをコピペ"
         defaultValue={ value }
         onChange={ handleChange }
