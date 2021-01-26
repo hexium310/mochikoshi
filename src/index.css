@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply antialiased;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+@layer utilities {
+  /* purgecss start ignore */
+  /* purgecss end ignore */
+}
+
+@layer components {
+}
