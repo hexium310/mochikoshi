@@ -3,7 +3,11 @@ const timeFormat = /^(\d)[:;]?(\d{2})/;
 const deleteLine = '*****DELETE LINE*****';
 
 export const generateTimeline = (timeline: string, carriedOverTime: number | null): string => {
-  const diff = defaultTime - (carriedOverTime || defaultTime);
+  if (carriedOverTime === null) {
+    return timeline;
+  }
+
+  const diff = defaultTime - carriedOverTime;
   let finished: boolean;
 
   const newTimeline = timeline.split('\n').map((line) => {
