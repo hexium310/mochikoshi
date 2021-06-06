@@ -1,12 +1,12 @@
-import React from 'react';
+import { FC, ChangeEventHandler } from 'react';
 import cntl from 'cntl';
 
 interface OriginalTimelineProps {
   value: string;
-  handleChange: React.ChangeEventHandler<HTMLTextAreaElement>;
+  handleChange: ChangeEventHandler<HTMLTextAreaElement>;
 }
 
-const OriginalTimeline: React.FC<OriginalTimelineProps> = ({ value, handleChange }) => {
+const OriginalTimeline: FC<OriginalTimelineProps> = ({ value, handleChange }) => {
   return (
     <div className={ cntl`flex flex-col items-center w-full` }>
       元のTL

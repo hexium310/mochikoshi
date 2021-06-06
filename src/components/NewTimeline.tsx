@@ -1,11 +1,11 @@
-import React from 'react';
+import { FC } from 'react';
 import cntl from 'cntl';
 
 interface NewTimelineProps {
   value: string;
 }
 
-const NewTimeline: React.FC<NewTimelineProps> = ({ value }) => {
+const NewTimeline: FC<NewTimelineProps> = ({ value }) => {
   return (
     <div className={ cntl`flex flex-col items-center w-full` }>
       持ち越し適用後TL
