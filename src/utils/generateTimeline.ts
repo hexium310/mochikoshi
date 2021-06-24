@@ -1,5 +1,5 @@
 const defaultTime = 90;
-const timeFormat = /^(\d)[:;]?(\d{2})/;
+const timeFormat = /^(\d{1,2})[:;]?(\d{2})/;
 const deleteLine = '*****DELETE LINE*****';
 
 export const generateTimeline = (timeline: string, carriedOverTime: number | null): string => {
